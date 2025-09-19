@@ -1,0 +1,88 @@
+/* Heading fitur */
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.heroBanner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--ifm-background-color); /* otomatis putih / hitam */
+  color: var(--ifm-color-primary-dark);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Ornamen lingkaran blur */
+.heroBanner::before,
+.heroBanner::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.heroBanner::before {
+  width: 300px;
+  height: 300px;
+  background: #3294ff;
+  top: -100px;
+  left: -100px;
+}
+
+.heroBanner::after {
+  width: 400px;
+  height: 400px;
+  background: #fe39bc;
+  bottom: -150px;
+  right: -150px;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative; /* supaya konten tidak ketimpa ornamen */
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.primaryButton {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.primaryButton:hover {
+  transform: scale(1.05); /* sedikit membesar */
+}

@@ -1,0 +1,15 @@
+{
+  "style": "dark",
+  "links": [
+    {
+      "title": "Docs",
+      "items": [
+        {
+          "label": "Tutorial",
+          "to": "/docs/intro"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright © 2025 KOCEK"
+}
